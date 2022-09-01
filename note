@@ -1,0 +1,3 @@
+# start server
+conda activate fastapi
+uvicorn index:app --reload
