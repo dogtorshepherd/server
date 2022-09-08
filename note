@@ -1,3 +1,6 @@
 # start server
 conda activate fastapi
 uvicorn index:app --reload
+
+brew services stop mariadb
+brew services start mariadb

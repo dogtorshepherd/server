@@ -12,5 +12,8 @@ users = Table(
     Column('email',String(255)),
     Column('role',String(255)),
     Column('username',String(255)),
-    Column('password',String(255))
+    Column('password',String(255)),
+    Column('bio',String(255)),
+    Column('avatar',String(255)),
+    Column('disabled',Integer)
 )
