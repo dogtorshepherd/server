@@ -8,6 +8,7 @@ class User(BaseModel):
     email: str | None = None
     role: str
     username: str
+    password: str
     bio: str | None = None
     avatar: str | None = None
     disabled: bool | None = None

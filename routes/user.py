@@ -2,12 +2,18 @@ from fastapi import APIRouter, Query
 from config.db import conn
 from models.index import users
 from schemas.user import User
+from passlib.context import CryptContext
 
 user = APIRouter(
     prefix="/user",
     tags=["User"],
     responses={404: {"message": "Not found"}}
 )
+
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
 
 @user.get("/")
 async def read_user(user_id: str | None = Query(default=None, max_length=50)):
@@ -25,7 +31,8 @@ async def create_user(user: User):
         email = user.email,
         role = user.role,
         username = user.username,
-        password = user.password,
+        password = get_password_hash(user.password),
+        avatar = "https://icon-library.com/images/person-icon-gif/person-icon-gif-10.jpg"
     ))
     return conn.execute(users.select()).fetchall()
 
