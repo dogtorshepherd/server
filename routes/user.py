@@ -38,16 +38,27 @@ async def create_user(user: User):
 
 @user.put("/")
 async def update_user(user: User):
-    conn.execute(users.update().values(
-        user_id = user.user_id,
-        firstname = user.firstname,
-        lastname = user.lastname,
-        number = user.number,
-        email = user.email,
-        role = user.role,
-        username = user.username,
-        password = user.password,
-    ).where(users.c.user_id == user.user_id))
+    if user.password == "" :
+        conn.execute(users.update().values(
+            user_id = user.user_id,
+            firstname = user.firstname,
+            lastname = user.lastname,
+            number = user.number,
+            email = user.email,
+            role = user.role,
+            username = user.username,
+        ).where(users.c.user_id == user.user_id))
+    else :
+        conn.execute(users.update().values(
+            user_id = user.user_id,
+            firstname = user.firstname,
+            lastname = user.lastname,
+            number = user.number,
+            email = user.email,
+            role = user.role,
+            username = user.username,
+            password = get_password_hash(user.password),
+        ).where(users.c.user_id == user.user_id))
     return conn.execute(users.select()).fetchall()
 
 @user.delete("/")
