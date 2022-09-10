@@ -18,7 +18,6 @@ async def read_sec(sec_id: str | None = Query(default=None, max_length=50)):
 @sec.post("/")
 async def create_sec(sec: Sec):
     conn.execute(secs.insert().values(
-        sec_id = sec.sec_id,
         subject_id = sec.subject_id,
         teacher_id = sec.teacher_id,
     ))
