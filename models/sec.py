@@ -5,7 +5,7 @@ from config.db import meta
 
 secs = Table(
     'sec',meta,
-    Column('sec_id',String(255),primary_key=True),
+    Column('sec_id',Integer,primary_key=True),
     Column('subject_id',String(255)),
     Column('teacher_id',String(255)),
 )
