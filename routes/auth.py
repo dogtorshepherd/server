@@ -72,10 +72,8 @@ def get_user(username: str):
 def authenticate_user(username: str, password: str):
     user = get_user(username)
     if not user:
-        print("555")
         return False
     if not verify_password(password, user.password):
-        print("666")
         return False
     return user
 
