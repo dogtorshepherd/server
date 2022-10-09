@@ -5,10 +5,9 @@ from config.db import meta
 
 exams = Table(
     'exam',meta,
-    Column('exam_id',String(255),primary_key=True),
-    Column('exam_db_id',String(255)),
+    Column('exam_id',Integer,primary_key=True),
+    Column('sec_id',Integer),
     Column('question',String(255)),
-    Column('sql',String(255)),
     Column('answer',String(255)),
     Column('score',Integer),
 )
