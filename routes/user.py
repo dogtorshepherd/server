@@ -32,7 +32,7 @@ async def create_user(user: User):
         role = user.role,
         username = user.username,
         password = get_password_hash(user.password),
-        avatar = "https://icon-library.com/images/person-icon-gif/person-icon-gif-10.jpg"
+        avatar = "https://icon-library.com/images/human-icon/human-icon-22.jpg"
     ))
     return conn.execute(users.select()).fetchall()
 
