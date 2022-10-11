@@ -1,0 +1,78 @@
+[WEB_SQL][UserRepository][2022-08-06 11:47:12][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_admin')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_admin' AND u.user_password='test_password' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_admin' AND u.user_password='test_password' LIMIT 1) 
+[WEB_SQL][PrenameService][2022-08-06 11:47:13][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1DB0>
+[WEB_SQL][PrenameService][2022-08-06 11:47:13][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1DB0>
+[WEB_SQL][PrenameService][2022-08-06 11:47:15][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1C60>
+[WEB_SQL][PrenameService][2022-08-06 11:47:15][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1C60>
+[WEB_SQL][PrenameService][2022-08-06 11:47:18][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F32E0>
+[WEB_SQL][PrenameService][2022-08-06 11:47:18][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F32E0>
+[WEB_SQL][PrenameService][2022-08-06 11:47:19][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2890>
+[WEB_SQL][PrenameService][2022-08-06 11:47:19][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2890>
+[WEB_SQL][UserController][2022-08-06 11:47:25][ERROR]: UserController editUser Exception: {"statusCode": 400, "message": "\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e44\u0e21\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07", "httpCode": 400, "stack": {"code": 400, "msg": "payload \u0e27\u0e48\u0e32\u0e07 \u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e43\u0e2b\u0e49\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07"}}
+[WEB_SQL][UserEventRouter][2022-08-06 11:47:25][ERROR]: UserEventRouter editUser() Exception : (400, 'ข้อมูลไม่ถูกต้อง', {'code': 400, 'msg': 'payload ว่าง กรุณาใส่ข้อมูลให้ถูกต้อง'})
+[WEB_SQL][UserRouter][2022-08-06 11:47:25][ERROR]: UserRouter editUser() Exception : (400, 'ข้อมูลไม่ถูกต้อง', {'code': 400, 'msg': 'payload ว่าง กรุณาใส่ข้อมูลให้ถูกต้อง'})
+[WEB_SQL][UserController][2022-08-06 11:47:40][ERROR]: UserController editUser Exception: {"statusCode": 400, "message": "\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e44\u0e21\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07", "httpCode": 400, "stack": {"code": 400, "msg": "payload \u0e27\u0e48\u0e32\u0e07 \u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e43\u0e2b\u0e49\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07"}}
+[WEB_SQL][UserEventRouter][2022-08-06 11:47:40][ERROR]: UserEventRouter editUser() Exception : (400, 'ข้อมูลไม่ถูกต้อง', {'code': 400, 'msg': 'payload ว่าง กรุณาใส่ข้อมูลให้ถูกต้อง'})
+[WEB_SQL][UserRouter][2022-08-06 11:47:40][ERROR]: UserRouter editUser() Exception : (400, 'ข้อมูลไม่ถูกต้อง', {'code': 400, 'msg': 'payload ว่าง กรุณาใส่ข้อมูลให้ถูกต้อง'})
+[WEB_SQL][UserController][2022-08-06 11:47:54][ERROR]: UserController editUser Exception: {"statusCode": 400, "message": "\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e44\u0e21\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07", "httpCode": 400, "stack": {"code": 400, "msg": "payload \u0e27\u0e48\u0e32\u0e07 \u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e43\u0e2b\u0e49\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07"}}
+[WEB_SQL][UserEventRouter][2022-08-06 11:47:54][ERROR]: UserEventRouter editUser() Exception : (400, 'ข้อมูลไม่ถูกต้อง', {'code': 400, 'msg': 'payload ว่าง กรุณาใส่ข้อมูลให้ถูกต้อง'})
+[WEB_SQL][UserRouter][2022-08-06 11:47:54][ERROR]: UserRouter editUser() Exception : (400, 'ข้อมูลไม่ถูกต้อง', {'code': 400, 'msg': 'payload ว่าง กรุณาใส่ข้อมูลให้ถูกต้อง'})
+[WEB_SQL][PrenameService][2022-08-06 11:50:00][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1CC0>
+[WEB_SQL][PrenameService][2022-08-06 11:50:00][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1CC0>
+[WEB_SQL][PrenameService][2022-08-06 11:50:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1D20>
+[WEB_SQL][PrenameService][2022-08-06 11:50:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1D20>
+[WEB_SQL][PrenameService][2022-08-06 11:51:57][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3A90>
+[WEB_SQL][PrenameService][2022-08-06 11:51:57][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3A90>
+[WEB_SQL][PrenameService][2022-08-06 11:51:58][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F24D0>
+[WEB_SQL][PrenameService][2022-08-06 11:51:58][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F24D0>
+[WEB_SQL][PrenameService][2022-08-06 11:52:00][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39560F40>
+[WEB_SQL][PrenameService][2022-08-06 11:52:00][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39560F40>
+[WEB_SQL][PrenameService][2022-08-06 11:53:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF395608E0>
+[WEB_SQL][PrenameService][2022-08-06 11:53:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF395608E0>
+[WEB_SQL][PrenameService][2022-08-06 11:53:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2680>
+[WEB_SQL][PrenameService][2022-08-06 11:53:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2680>
+[WEB_SQL][PrenameService][2022-08-06 11:53:09][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1AE0>
+[WEB_SQL][PrenameService][2022-08-06 11:53:09][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1AE0>
+[WEB_SQL][PrenameService][2022-08-06 11:53:13][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1B40>
+[WEB_SQL][PrenameService][2022-08-06 11:53:13][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1B40>
+[WEB_SQL][PrenameService][2022-08-06 11:53:16][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3D90>
+[WEB_SQL][PrenameService][2022-08-06 11:53:16][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3D90>
+[WEB_SQL][PrenameService][2022-08-06 11:53:17][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2EC0>
+[WEB_SQL][PrenameService][2022-08-06 11:53:17][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2EC0>
+[WEB_SQL][PrenameService][2022-08-06 11:54:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2BF0>
+[WEB_SQL][PrenameService][2022-08-06 11:54:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2BF0>
+[WEB_SQL][PrenameService][2022-08-06 11:54:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39561210>
+[WEB_SQL][PrenameService][2022-08-06 11:54:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39561210>
+[WEB_SQL][PrenameService][2022-08-07 12:01:18][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39560E20>
+[WEB_SQL][PrenameService][2022-08-07 12:01:18][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39560E20>
+[WEB_SQL][PrenameService][2022-08-07 12:01:20][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39561810>
+[WEB_SQL][PrenameService][2022-08-07 12:01:20][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39561810>
+[WEB_SQL][PrenameService][2022-08-07 12:01:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3790>
+[WEB_SQL][PrenameService][2022-08-07 12:01:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3790>
+[WEB_SQL][PrenameService][2022-08-07 12:01:25][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3F40>
+[WEB_SQL][PrenameService][2022-08-07 12:01:25][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3F40>
+[WEB_SQL][PrenameService][2022-08-07 12:01:31][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1EA0>
+[WEB_SQL][PrenameService][2022-08-07 12:01:31][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1EA0>
+[WEB_SQL][PrenameService][2022-08-07 12:01:35][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2320>
+[WEB_SQL][PrenameService][2022-08-07 12:01:35][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2320>
+[WEB_SQL][PrenameService][2022-08-07 12:02:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39562320>
+[WEB_SQL][PrenameService][2022-08-07 12:02:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39562320>
+[WEB_SQL][PrenameService][2022-08-07 12:02:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1D50>
+[WEB_SQL][PrenameService][2022-08-07 12:02:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1D50>
+[WEB_SQL][PrenameService][2022-08-07 12:02:30][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2710>
+[WEB_SQL][PrenameService][2022-08-07 12:02:30][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2710>
+[WEB_SQL][PrenameService][2022-08-07 12:02:32][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F0D60>
+[WEB_SQL][PrenameService][2022-08-07 12:02:32][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F0D60>
+[WEB_SQL][PrenameService][2022-08-07 12:06:03][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F0E80>
+[WEB_SQL][PrenameService][2022-08-07 12:06:03][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F0E80>
+[WEB_SQL][PrenameService][2022-08-07 12:06:04][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2200>
+[WEB_SQL][PrenameService][2022-08-07 12:06:04][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F2200>
+[WEB_SQL][PrenameService][2022-08-07 12:06:08][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39561150>
+[WEB_SQL][PrenameService][2022-08-07 12:06:08][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF39561150>
+[WEB_SQL][PrenameService][2022-08-07 12:06:09][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1BD0>
+[WEB_SQL][PrenameService][2022-08-07 12:06:09][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F1BD0>
+[WEB_SQL][PrenameService][2022-08-07 12:06:14][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F32B0>
+[WEB_SQL][PrenameService][2022-08-07 12:06:14][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F32B0>
+[WEB_SQL][PrenameService][2022-08-07 12:06:16][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3550>
+[WEB_SQL][PrenameService][2022-08-07 12:06:16][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3550>
+[WEB_SQL][PrenameService][2022-08-07 12:06:35][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3760>
+[WEB_SQL][PrenameService][2022-08-07 12:06:35][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001AF394F3760>

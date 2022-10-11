@@ -1,0 +1,124 @@
+[WEB_SQL][UserRepository][2022-08-08 09:08:23][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_admin')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_admin' AND u.user_password='test_password' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_admin' AND u.user_password='test_password' LIMIT 1) 
+[WEB_SQL][PrenameService][2022-08-08 09:08:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6D70>
+[WEB_SQL][PrenameService][2022-08-08 09:08:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6D70>
+[WEB_SQL][PrenameService][2022-08-08 09:08:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6D70>
+[WEB_SQL][PrenameService][2022-08-08 09:08:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6D70>
+[WEB_SQL][PrenameService][2022-08-08 09:13:21][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7790>
+[WEB_SQL][PrenameService][2022-08-08 09:13:21][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7790>
+[WEB_SQL][PrenameService][2022-08-08 09:13:21][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7790>
+[WEB_SQL][PrenameService][2022-08-08 09:13:21][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7790>
+[WEB_SQL][PrenameService][2022-08-08 09:13:53][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6AD0>
+[WEB_SQL][PrenameService][2022-08-08 09:13:53][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6AD0>
+[WEB_SQL][PrenameService][2022-08-08 09:14:10][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF76D0>
+[WEB_SQL][PrenameService][2022-08-08 09:14:10][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF76D0>
+[WEB_SQL][PrenameService][2022-08-08 09:14:10][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF76D0>
+[WEB_SQL][PrenameService][2022-08-08 09:14:10][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF76D0>
+[WEB_SQL][PrenameService][2022-08-08 09:14:22][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6A70>
+[WEB_SQL][PrenameService][2022-08-08 09:14:22][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6A70>
+[WEB_SQL][PrenameService][2022-08-08 09:14:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF5D50>
+[WEB_SQL][PrenameService][2022-08-08 09:14:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF5D50>
+[WEB_SQL][PrenameService][2022-08-08 09:14:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF5D50>
+[WEB_SQL][PrenameService][2022-08-08 09:14:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF5D50>
+[WEB_SQL][PrenameService][2022-08-08 09:14:27][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF69E0>
+[WEB_SQL][PrenameService][2022-08-08 09:14:27][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF69E0>
+[WEB_SQL][PrenameService][2022-08-08 09:14:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14849810>
+[WEB_SQL][PrenameService][2022-08-08 09:14:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14849810>
+[WEB_SQL][PrenameService][2022-08-08 09:14:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14849810>
+[WEB_SQL][PrenameService][2022-08-08 09:14:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14849810>
+[WEB_SQL][UserRepository][2022-08-08 09:17:41][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='t')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 't' AND u.user_password='t' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='t' AND u.user_password='t' LIMIT 1) 
+[WEB_SQL][UserRepository][2022-08-08 09:17:56][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test' AND u.user_password='test' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test' AND u.user_password='test' LIMIT 1) 
+[WEB_SQL][PrenameService][2022-08-08 09:17:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6710>
+[WEB_SQL][PrenameService][2022-08-08 09:17:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6710>
+[WEB_SQL][PrenameService][2022-08-08 09:17:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6710>
+[WEB_SQL][PrenameService][2022-08-08 09:17:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6710>
+[WEB_SQL][PrenameService][2022-08-08 09:28:01][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7460>
+[WEB_SQL][PrenameService][2022-08-08 09:28:01][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7460>
+[WEB_SQL][PrenameService][2022-08-08 09:28:01][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7460>
+[WEB_SQL][PrenameService][2022-08-08 09:28:01][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7460>
+[WEB_SQL][UserRepository][2022-08-08 09:52:52][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test' AND u.user_password='test' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test' AND u.user_password='test' LIMIT 1) 
+[WEB_SQL][PrenameService][2022-08-08 09:52:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848820>
+[WEB_SQL][PrenameService][2022-08-08 09:52:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848820>
+[WEB_SQL][PrenameService][2022-08-08 09:52:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848820>
+[WEB_SQL][PrenameService][2022-08-08 09:52:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848820>
+[WEB_SQL][PrenameService][2022-08-08 09:53:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF79A0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF79A0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6DA0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6DA0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6DA0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6DA0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6AA0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6AA0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848760>
+[WEB_SQL][PrenameService][2022-08-08 09:53:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848760>
+[WEB_SQL][PrenameService][2022-08-08 09:53:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848760>
+[WEB_SQL][PrenameService][2022-08-08 09:53:24][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848760>
+[WEB_SQL][PrenameService][2022-08-08 09:53:39][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B148495A0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:39][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B148495A0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:39][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B148495A0>
+[WEB_SQL][PrenameService][2022-08-08 09:53:39][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B148495A0>
+[WEB_SQL][PrenameService][2022-08-08 09:58:54][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848880>
+[WEB_SQL][PrenameService][2022-08-08 09:58:54][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848880>
+[WEB_SQL][PrenameService][2022-08-08 09:58:57][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7B50>
+[WEB_SQL][PrenameService][2022-08-08 09:58:57][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7B50>
+[WEB_SQL][PrenameService][2022-08-08 09:58:57][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7B50>
+[WEB_SQL][PrenameService][2022-08-08 09:58:57][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7B50>
+[WEB_SQL][PrenameService][2022-08-08 09:58:59][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF5F60>
+[WEB_SQL][PrenameService][2022-08-08 09:58:59][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF5F60>
+[WEB_SQL][PrenameService][2022-08-08 09:59:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6E60>
+[WEB_SQL][PrenameService][2022-08-08 09:59:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6E60>
+[WEB_SQL][PrenameService][2022-08-08 09:59:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6E60>
+[WEB_SQL][PrenameService][2022-08-08 09:59:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6E60>
+[WEB_SQL][UserRepository][2022-08-08 10:05:06][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='teacher')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'teacher' AND u.user_password='teacher' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='teacher' AND u.user_password='teacher' LIMIT 1) 
+[WEB_SQL][UserRepository][2022-08-08 10:05:10][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_teacher')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_teacher' AND u.user_password='test_teacher' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_teacher' AND u.user_password='test_teacher' LIMIT 1) 
+[WEB_SQL][UserRepository][2022-08-08 11:40:45][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_teacher')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_teacher' AND u.user_password='test_teacher' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_teacher' AND u.user_password='test_teacher' LIMIT 1) 
+[WEB_SQL][UserRepository][2022-08-08 12:51:40][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_teacher')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_teacher' AND u.user_password='test_teacher' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_teacher' AND u.user_password='test_teacher' LIMIT 1) 
+[WEB_SQL][UserRepository][2022-08-08 12:51:52][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_admin')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_admin' AND u.user_password='test_password' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_admin' AND u.user_password='test_password' LIMIT 1) 
+[WEB_SQL][PrenameService][2022-08-08 12:51:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848910>
+[WEB_SQL][PrenameService][2022-08-08 12:51:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848910>
+[WEB_SQL][PrenameService][2022-08-08 12:51:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848910>
+[WEB_SQL][PrenameService][2022-08-08 12:51:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848910>
+[WEB_SQL][UserRepository][2022-08-08 01:27:44][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='teacher')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'teacher' AND u.user_password='teacher' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='teacher' AND u.user_password='teacher' LIMIT 1) 
+[WEB_SQL][UserRepository][2022-08-08 01:27:51][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_teacher')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_teacher' AND u.user_password='test_teacher' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_teacher' AND u.user_password='test_teacher' LIMIT 1) 
+[WEB_SQL][UserRepository][2022-08-08 02:21:19][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_admin')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_admin' AND u.user_password='test_password' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_admin' AND u.user_password='test_password' LIMIT 1) 
+[WEB_SQL][PrenameService][2022-08-08 02:21:20][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484A5C0>
+[WEB_SQL][PrenameService][2022-08-08 02:21:20][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484A5C0>
+[WEB_SQL][PrenameService][2022-08-08 02:21:20][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484A5C0>
+[WEB_SQL][PrenameService][2022-08-08 02:21:20][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484A5C0>
+[WEB_SQL][PrenameService][2022-08-08 02:22:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848730>
+[WEB_SQL][PrenameService][2022-08-08 02:22:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848730>
+[WEB_SQL][PrenameService][2022-08-08 02:22:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848730>
+[WEB_SQL][PrenameService][2022-08-08 02:22:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848730>
+[WEB_SQL][PrenameService][2022-08-08 02:22:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848730>
+[WEB_SQL][PrenameService][2022-08-08 02:22:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14848730>
+[WEB_SQL][PrenameService][2022-08-08 02:23:08][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7EB0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:08][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7EB0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7460>
+[WEB_SQL][PrenameService][2022-08-08 02:23:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7460>
+[WEB_SQL][PrenameService][2022-08-08 02:23:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7460>
+[WEB_SQL][PrenameService][2022-08-08 02:23:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7460>
+[WEB_SQL][PrenameService][2022-08-08 02:23:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7460>
+[WEB_SQL][PrenameService][2022-08-08 02:23:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7460>
+[WEB_SQL][PrenameService][2022-08-08 02:23:12][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF68F0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:12][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF68F0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:15][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7910>
+[WEB_SQL][PrenameService][2022-08-08 02:23:15][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7910>
+[WEB_SQL][PrenameService][2022-08-08 02:23:15][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7910>
+[WEB_SQL][PrenameService][2022-08-08 02:23:15][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7910>
+[WEB_SQL][PrenameService][2022-08-08 02:23:15][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7910>
+[WEB_SQL][PrenameService][2022-08-08 02:23:15][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF7910>
+[WEB_SQL][PrenameService][2022-08-08 02:23:17][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6530>
+[WEB_SQL][PrenameService][2022-08-08 02:23:17][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B7FEF6530>
+[WEB_SQL][PrenameService][2022-08-08 02:23:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14849FF0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14849FF0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14849FF0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14849FF0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14849FF0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:26][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B14849FF0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:37][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484A2F0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:37][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484A2F0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:37][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484A2F0>
+[WEB_SQL][PrenameService][2022-08-08 02:23:37][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484A2F0>
+[WEB_SQL][PrenameService][2022-08-08 02:24:03][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484A3E0>
+[WEB_SQL][PrenameService][2022-08-08 02:24:03][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484A3E0>
+[WEB_SQL][PrenameService][2022-08-08 02:27:31][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484B520>
+[WEB_SQL][PrenameService][2022-08-08 02:27:31][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000024B1484B520>

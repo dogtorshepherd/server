@@ -1,0 +1,22 @@
+[WEB_SQL][UserRepository][2022-08-05 09:50:36][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test' AND u.user_password='test' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test' AND u.user_password='test' LIMIT 1) 
+[WEB_SQL][PrenameService][2022-08-05 09:50:37][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73CEB0>
+[WEB_SQL][PrenameService][2022-08-05 09:50:37][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73CEB0>
+[WEB_SQL][UserRepository][2022-08-05 09:52:54][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test' AND u.user_password='test' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test' AND u.user_password='test' LIMIT 1) 
+[WEB_SQL][PrenameService][2022-08-05 09:52:55][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B6BFAF0>
+[WEB_SQL][PrenameService][2022-08-05 09:52:55][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B6BFAF0>
+[WEB_SQL][PrenameService][2022-08-05 09:53:12][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73D930>
+[WEB_SQL][PrenameService][2022-08-05 09:53:12][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73D930>
+[WEB_SQL][PrenameService][2022-08-05 09:53:14][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73D510>
+[WEB_SQL][PrenameService][2022-08-05 09:53:14][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73D510>
+[WEB_SQL][PrenameService][2022-08-05 09:53:15][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73D060>
+[WEB_SQL][PrenameService][2022-08-05 09:53:15][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73D060>
+[WEB_SQL][PrenameService][2022-08-05 09:57:58][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73E560>
+[WEB_SQL][PrenameService][2022-08-05 09:57:58][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73E560>
+[WEB_SQL][PrenameService][2022-08-05 09:58:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73F010>
+[WEB_SQL][PrenameService][2022-08-05 09:58:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73F010>
+[WEB_SQL][PrenameService][2022-08-05 09:58:10][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73F700>
+[WEB_SQL][PrenameService][2022-08-05 09:58:10][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B73F700>
+[WEB_SQL][PrenameService][2022-08-05 09:58:12][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B7601F0>
+[WEB_SQL][PrenameService][2022-08-05 09:58:12][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001FB3B7601F0>
+[WEB_SQL][UserRepository][2022-08-05 09:59:40][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_teacher')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_teacher' AND u.user_password='test_teacher' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_teacher' AND u.user_password='test_teacher' LIMIT 1) 
+[WEB_SQL][UserRepository][2022-08-05 10:01:07][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_teacher')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_teacher' AND u.user_password='test_teacher' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_teacher' AND u.user_password='test_teacher' LIMIT 1) 

@@ -1,0 +1,16 @@
+[WEB_SQL][DBConnector][2022-08-02 03:48:21][ERROR]: {'msg': "Can't connect to MySQL server on 'localhost:3308' (10061)", '_full_msg': "2003 (HY000): Can't connect to MySQL server on 'localhost:3308' (10061)", 'errno': 2003, 'sqlstate': 'HY000'}
+[WEB_SQL][AdminRepository][2022-08-02 03:48:21][ERROR]: AdminRepository findAdminDataByParams() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][AdminServices][2022-08-02 03:48:21][ERROR]: AdminServices getAdmin() Exception: {}
+[WEB_SQL][AdminServices][2022-08-02 03:48:21][ERROR]: AdminServices getAdmin() Exception: {}
+[WEB_SQL][AdminController][2022-08-02 03:48:22][ERROR]: AdminController getAdmin() Exception: (500, 'INTERNAL SERVER ERROR', "'AdminRepository' object has no attribute 'con'")
+[WEB_SQL][AdminServices][2022-08-02 03:48:22][ERROR]: AdminEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', "'AdminRepository' object has no attribute 'con'")
+[WEB_SQL][AdminServices][2022-08-02 03:48:22][ERROR]: AdminEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', "'AdminRepository' object has no attribute 'con'")
+[WEB_SQL][AdminRouter][2022-08-02 03:48:22][ERROR]: AdminRouter admin() Exception : (500, 'INTERNAL SERVER ERROR', "'AdminRepository' object has no attribute 'con'")
+[WEB_SQL][DBConnector][2022-08-02 03:59:51][ERROR]: {'msg': "Can't connect to MySQL server on 'localhost:3308' (10061)", '_full_msg': "2003 (HY000): Can't connect to MySQL server on 'localhost:3308' (10061)", 'errno': 2003, 'sqlstate': 'HY000'}
+[WEB_SQL][AdminRepository][2022-08-02 03:59:51][ERROR]: AdminRepository findAdminDataByParams() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][AdminServices][2022-08-02 03:59:51][ERROR]: AdminServices getAdmin() Exception: {}
+[WEB_SQL][AdminServices][2022-08-02 03:59:51][ERROR]: AdminServices getAdmin() Exception: {}
+[WEB_SQL][AdminController][2022-08-02 03:59:51][ERROR]: AdminController getAdmin() Exception: (500, 'INTERNAL SERVER ERROR', "'AdminRepository' object has no attribute 'con'")
+[WEB_SQL][AdminServices][2022-08-02 03:59:51][ERROR]: AdminEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', "'AdminRepository' object has no attribute 'con'")
+[WEB_SQL][AdminServices][2022-08-02 03:59:51][ERROR]: AdminEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', "'AdminRepository' object has no attribute 'con'")
+[WEB_SQL][AdminRouter][2022-08-02 03:59:51][ERROR]: AdminRouter admin() Exception : (500, 'INTERNAL SERVER ERROR', "'AdminRepository' object has no attribute 'con'")

@@ -1,0 +1,756 @@
+{
+	"info": {
+		"_postman_id": "82bb630d-0192-4156-9e85-754b809a11f6",
+		"name": "FLASKAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15730218"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Get Admin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/admin?admin_id=1&user_id&username",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"admin"
+							],
+							"query": [
+								{
+									"key": "admin_id",
+									"value": "1"
+								},
+								{
+									"key": "user_id",
+									"value": null
+								},
+								{
+									"key": "username",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/users",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"test\",\r\n    \"password\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/user/login",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Prename",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/prenames",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"prenames"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\": \"ADMIN\",\r\n    \"username\": \"test_admin\",\r\n    \"password\": \"test_password\",\r\n    \"prename\": 1,\r\n    \"firstname\": \"test_firstname\",\r\n    \"lastname\": \"test_lastname\",\r\n    \"admin\": {\r\n        \"adminId\": \"testId\"\r\n    },\r\n    \"teacher\": {\r\n        \"teacherId\": \"\",\r\n        \"teacherPhone\": \"000-000-0000\"\r\n    },\r\n    \"student\": {\r\n        \"studentId\": \"\",\r\n        \"majorId\": \"\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/user",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 5,\r\n    \"type\": \"ADMIN\",\r\n    \"firstname\": \"ADMIN\",\r\n    \"lastname\": \"ADMIN\",\r\n    \"prename\": 1,\r\n    \"admin\": {\r\n        \"adminId\": \"testId\"\r\n    },\r\n    \"teacher\": {\r\n        \"teacherId\": \"\",\r\n        \"teacherPhone\": \"000-000-0000\"\r\n    },\r\n    \"student\": {\r\n        \"studentId\": \"\",\r\n        \"majorId\": \"\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/user",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"user_id\": 14\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/user",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "Get Teachers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/teachers",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"teachers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Get Student By Group Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/students/subject?group_id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"students",
+								"subject"
+							],
+							"query": [
+								{
+									"key": "group_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Student",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/students?user_id=14&student_id=test&search=test",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"students"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "14"
+								},
+								{
+									"key": "student_id",
+									"value": "test"
+								},
+								{
+									"key": "search",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subject",
+			"item": [
+				{
+					"name": "Get Subjects",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/subjects",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"subjects"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Major",
+			"item": [
+				{
+					"name": "Get Majors",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/majors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"majors"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "GET COURSE",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/courses",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Quiz",
+			"item": [
+				{
+					"name": "GET QUIZ",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/quiz",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"quiz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET QUIZ BY QUIZ GROUP ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/quiz-info?quiz_group_id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"quiz-info"
+							],
+							"query": [
+								{
+									"key": "quiz_group_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Quiz",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"quizDatabaseId\": 1,\r\n  \"quizNum\": 1,\r\n  \"quizObjective\": \"\",\r\n  \"quizType\": \"SELF\",\r\n  \"quizStartDate\": \"2022-05-02\",\r\n  \"quizEndDate\": \"2022-05-02\",\r\n  \"quizStartTime\": \"12:20:00\",\r\n  \"quizEndTime\": \"15:19:59\",\r\n  \"quizSubjectGroupId\": 1,\r\n  \"quizLists\": [\r\n    {\r\n      \"quizQuestion\": \"โจทย์\",\r\n      \"quizAnswer\": \"COMMAND\",\r\n      \"quizPoint\": 10,\r\n      \"quizStandard\": \"RESULT\"\r\n    }\r\n  ] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/quiz",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"quiz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Quiz",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quizGroupId\": 7,\r\n    \"quizDatabaseId\": 1,\r\n    \"quizNum\": 1,\r\n    \"quizObjective\": \"\",\r\n    \"quizType\": \"SELF\",\r\n    \"quizStartDate\": \"2022-05-02\",\r\n    \"quizEndDate\": \"2022-05-02\",\r\n    \"quizStartTime\": \"12:20:00\",\r\n    \"quizEndTime\": \"15:19:59\",\r\n    \"quizSubjectGroupId\": 1,\r\n    \"quizLists\": [\r\n        {\r\n            \"quizId\": 4,\r\n            \"quizQuestion\": \"โจทย์\",\r\n            \"quizAnswer\": \"COMMAND\",\r\n            \"quizPoint\": 10,\r\n            \"quizStandard\": \"RESULT\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/quiz",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"quiz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Quiz",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quizGroupId\": 7,\r\n    \"isDeleteGroup\": true,\r\n    \"quizLists\": [\r\n        {\r\n            \"quizId\": 4\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/quiz",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"quiz"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Database",
+			"item": [
+				{
+					"name": "Get All Database",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/databases",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"databases"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Database Info",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/database-info?database_id=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"database-info"
+							],
+							"query": [
+								{
+									"key": "database_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Database",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-version",
+								"value": "1.0.0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"database_name\": \"test2\",\r\n    \"script\": \"CREATE TABLE tb_name_test (name VARCHAR(20), owner VARCHAR(20), species VARCHAR(20), sex CHAR(1), birth DATE, death DATE)\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/database",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"database"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Database",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/api/database",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"database"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Database",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"databaseId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/api/database",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"database"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "testApi",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-version",
+						"value": "1.0.0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/test",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,43 @@
+[WEB_SQL][UserRepository][2022-08-07 10:41:48][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='admin')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'admin' AND u.user_password='admin' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='admin' AND u.user_password='admin' LIMIT 1) 
+[WEB_SQL][PrenameService][2022-08-07 10:41:49][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001E23AA76D10>
+[WEB_SQL][PrenameService][2022-08-07 10:41:49][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001E23AA76D10>
+[WEB_SQL][PrenameService][2022-08-07 10:41:49][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001E23AA76D10>
+[WEB_SQL][PrenameService][2022-08-07 10:41:49][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001E23AA76D10>
+[WEB_SQL][UserController][2022-08-07 10:41:58][ERROR]: UserController createUser Exception: {}
+[WEB_SQL][UserEventRouter][2022-08-07 10:41:58][ERROR]: UserEventRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', "'id'")
+[WEB_SQL][UserRouter][2022-08-07 10:41:58][ERROR]: UserRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', "'id'")
+[WEB_SQL][UserController][2022-08-07 10:44:14][ERROR]: UserController createUser Exception: {}
+[WEB_SQL][UserEventRouter][2022-08-07 10:44:14][ERROR]: UserEventRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', "'id'")
+[WEB_SQL][UserRouter][2022-08-07 10:44:14][ERROR]: UserRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', "'id'")
+[WEB_SQL][UserController][2022-08-07 10:45:06][ERROR]: UserController createUser Exception: {}
+[WEB_SQL][UserEventRouter][2022-08-07 10:45:06][ERROR]: UserEventRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', "'id'")
+[WEB_SQL][UserRouter][2022-08-07 10:45:06][ERROR]: UserRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', "'id'")
+[WEB_SQL][PrenameService][2022-08-07 10:45:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106C80>
+[WEB_SQL][PrenameService][2022-08-07 10:45:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106C80>
+[WEB_SQL][PrenameService][2022-08-07 10:45:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106C80>
+[WEB_SQL][PrenameService][2022-08-07 10:45:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106C80>
+[WEB_SQL][PrenameService][2022-08-07 10:45:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106C80>
+[WEB_SQL][PrenameService][2022-08-07 10:45:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106C80>
+[WEB_SQL][PrenameService][2022-08-07 10:45:38][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106B30>
+[WEB_SQL][PrenameService][2022-08-07 10:45:38][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106B30>
+[WEB_SQL][PrenameService][2022-08-07 10:45:38][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106B30>
+[WEB_SQL][PrenameService][2022-08-07 10:45:38][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106B30>
+[WEB_SQL][PrenameService][2022-08-07 10:45:45][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC11068F0>
+[WEB_SQL][PrenameService][2022-08-07 10:45:45][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC11068F0>
+[WEB_SQL][PrenameService][2022-08-07 10:45:45][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC11068F0>
+[WEB_SQL][PrenameService][2022-08-07 10:45:45][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC11068F0>
+[WEB_SQL][PrenameService][2022-08-07 10:45:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106D40>
+[WEB_SQL][PrenameService][2022-08-07 10:45:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106D40>
+[WEB_SQL][PrenameService][2022-08-07 10:45:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106D40>
+[WEB_SQL][PrenameService][2022-08-07 10:45:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1106D40>
+[WEB_SQL][PrenameService][2022-08-07 10:46:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1188E80>
+[WEB_SQL][PrenameService][2022-08-07 10:46:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1188E80>
+[WEB_SQL][PrenameService][2022-08-07 10:46:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1188E80>
+[WEB_SQL][PrenameService][2022-08-07 10:46:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x0000018BC1188E80>
+[WEB_SQL][UserRepository][2022-08-07 10:46:13][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='teacher')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'teacher' AND u.user_password='teacher' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='teacher' AND u.user_password='teacher' LIMIT 1) 
+[WEB_SQL][UserController][2022-08-07 10:46:28][ERROR]: UserController createUser Exception: {"statusCode": 400, "message": "\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e44\u0e21\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07", "httpCode": 400, "stack": {"code": 400, "msg": "payload \u0e27\u0e48\u0e32\u0e07 \u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e43\u0e2b\u0e49\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07"}}
+[WEB_SQL][UserEventRouter][2022-08-07 10:46:28][ERROR]: UserEventRouter createUser() Exception : (400, 'ข้อมูลไม่ถูกต้อง', {'code': 400, 'msg': 'payload ว่าง กรุณาใส่ข้อมูลให้ถูกต้อง'})
+[WEB_SQL][UserRouter][2022-08-07 10:46:28][ERROR]: UserRouter createUser() Exception : (400, 'ข้อมูลไม่ถูกต้อง', {'code': 400, 'msg': 'payload ว่าง กรุณาใส่ข้อมูลให้ถูกต้อง'})
+[WEB_SQL][UserController][2022-08-07 10:47:04][ERROR]: UserController createUser Exception: {"statusCode": 400, "message": "\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e44\u0e21\u0e48\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07", "httpCode": 400, "stack": {"code": 400, "msg": "payload \u0e27\u0e48\u0e32\u0e07 \u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e2a\u0e48\u0e02\u0e49\u0e2d\u0e21\u0e39\u0e25\u0e43\u0e2b\u0e49\u0e16\u0e39\u0e01\u0e15\u0e49\u0e2d\u0e07"}}
+[WEB_SQL][UserEventRouter][2022-08-07 10:47:04][ERROR]: UserEventRouter createUser() Exception : (400, 'ข้อมูลไม่ถูกต้อง', {'code': 400, 'msg': 'payload ว่าง กรุณาใส่ข้อมูลให้ถูกต้อง'})
+[WEB_SQL][UserRouter][2022-08-07 10:47:04][ERROR]: UserRouter createUser() Exception : (400, 'ข้อมูลไม่ถูกต้อง', {'code': 400, 'msg': 'payload ว่าง กรุณาใส่ข้อมูลให้ถูกต้อง'})

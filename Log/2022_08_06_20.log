@@ -1,0 +1,150 @@
+[WEB_SQL][DBConnector][2022-08-06 08:22:54][DEBUG]: Connection Close
+[WEB_SQL][UserRepository][2022-08-06 08:23:42][ERROR]: UserRepository createUser Exception: {"msg": "Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)", "_full_msg": "1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)", "errno": 1452, "sqlstate": "23000"}
+[WEB_SQL][UserService][2022-08-06 08:23:42][ERROR]: UserService userLogin() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)"}
+[WEB_SQL][UserController][2022-08-06 08:23:42][ERROR]: UserController createUser Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)"}
+[WEB_SQL][UserEventRouter][2022-08-06 08:23:42][ERROR]: UserEventRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', '1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)')
+[WEB_SQL][UserRouter][2022-08-06 08:23:42][ERROR]: UserRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', '1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)')
+[WEB_SQL][UserRepository][2022-08-06 08:24:26][ERROR]: UserRepository createUser Exception: {"msg": "Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)", "_full_msg": "1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)", "errno": 1452, "sqlstate": "23000"}
+[WEB_SQL][UserService][2022-08-06 08:24:26][ERROR]: UserService userLogin() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)"}
+[WEB_SQL][UserController][2022-08-06 08:24:26][ERROR]: UserController createUser Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)"}
+[WEB_SQL][UserEventRouter][2022-08-06 08:24:26][ERROR]: UserEventRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', '1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)')
+[WEB_SQL][UserRouter][2022-08-06 08:24:26][ERROR]: UserRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', '1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)')
+[WEB_SQL][UserRepository][2022-08-06 08:26:52][ERROR]: UserRepository createUser Exception: {"msg": "Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)", "_full_msg": "1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)", "errno": 1452, "sqlstate": "23000"}
+[WEB_SQL][UserService][2022-08-06 08:26:52][ERROR]: UserService userLogin() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)"}
+[WEB_SQL][UserController][2022-08-06 08:26:52][ERROR]: UserController createUser Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)"}
+[WEB_SQL][UserEventRouter][2022-08-06 08:26:52][ERROR]: UserEventRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', '1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)')
+[WEB_SQL][UserRouter][2022-08-06 08:26:52][ERROR]: UserRouter createUser() Exception : (500, 'INTERNAL SERVER ERROR', '1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`flask_api_db`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_prename`) REFERENCES `prename_list` (`prename_id`) ON DELETE CASCADE ON UPDATE CASCADE)')
+[WEB_SQL][PrenameService][2022-08-06 08:34:22][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED80DC0>
+[WEB_SQL][PrenameService][2022-08-06 08:34:22][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED80DC0>
+[WEB_SQL][PrenameService][2022-08-06 08:34:22][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED80DC0>
+[WEB_SQL][PrenameService][2022-08-06 08:34:22][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED80DC0>
+[WEB_SQL][PrenameService][2022-08-06 08:35:27][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82F80>
+[WEB_SQL][PrenameService][2022-08-06 08:35:27][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82F80>
+[WEB_SQL][PrenameService][2022-08-06 08:35:27][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82F80>
+[WEB_SQL][PrenameService][2022-08-06 08:35:27][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82F80>
+[WEB_SQL][PrenameService][2022-08-06 08:35:27][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82F80>
+[WEB_SQL][PrenameService][2022-08-06 08:35:27][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82F80>
+[WEB_SQL][PrenameService][2022-08-06 08:36:10][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82D10>
+[WEB_SQL][PrenameService][2022-08-06 08:36:10][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82D10>
+[WEB_SQL][PrenameService][2022-08-06 08:36:37][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4250>
+[WEB_SQL][PrenameService][2022-08-06 08:36:37][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4250>
+[WEB_SQL][PrenameService][2022-08-06 08:36:43][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83BB0>
+[WEB_SQL][PrenameService][2022-08-06 08:36:43][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83BB0>
+[WEB_SQL][PrenameService][2022-08-06 08:37:55][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83700>
+[WEB_SQL][PrenameService][2022-08-06 08:37:55][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83700>
+[WEB_SQL][PrenameService][2022-08-06 08:38:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED828F0>
+[WEB_SQL][PrenameService][2022-08-06 08:38:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED828F0>
+[WEB_SQL][PrenameService][2022-08-06 08:38:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82740>
+[WEB_SQL][PrenameService][2022-08-06 08:38:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82740>
+[WEB_SQL][PrenameService][2022-08-06 08:38:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED814B0>
+[WEB_SQL][PrenameService][2022-08-06 08:38:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED814B0>
+[WEB_SQL][PrenameService][2022-08-06 08:38:53][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4B80>
+[WEB_SQL][PrenameService][2022-08-06 08:38:53][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4B80>
+[WEB_SQL][PrenameService][2022-08-06 08:39:01][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4E20>
+[WEB_SQL][PrenameService][2022-08-06 08:39:01][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4E20>
+[WEB_SQL][PrenameService][2022-08-06 08:39:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5510>
+[WEB_SQL][PrenameService][2022-08-06 08:39:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5510>
+[WEB_SQL][PrenameService][2022-08-06 08:39:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5C00>
+[WEB_SQL][PrenameService][2022-08-06 08:39:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5C00>
+[WEB_SQL][PrenameService][2022-08-06 08:39:08][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED813F0>
+[WEB_SQL][PrenameService][2022-08-06 08:39:08][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED813F0>
+[WEB_SQL][PrenameService][2022-08-06 08:39:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82320>
+[WEB_SQL][PrenameService][2022-08-06 08:39:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82320>
+[WEB_SQL][PrenameService][2022-08-06 08:39:16][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82170>
+[WEB_SQL][PrenameService][2022-08-06 08:39:16][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82170>
+[WEB_SQL][PrenameService][2022-08-06 08:39:25][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83580>
+[WEB_SQL][PrenameService][2022-08-06 08:39:25][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83580>
+[WEB_SQL][PrenameService][2022-08-06 08:39:31][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83E20>
+[WEB_SQL][PrenameService][2022-08-06 08:39:31][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83E20>
+[WEB_SQL][PrenameService][2022-08-06 08:39:33][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF6590>
+[WEB_SQL][PrenameService][2022-08-06 08:39:33][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF6590>
+[WEB_SQL][PrenameService][2022-08-06 08:39:49][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5780>
+[WEB_SQL][PrenameService][2022-08-06 08:39:49][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5780>
+[WEB_SQL][PrenameService][2022-08-06 08:39:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF43D0>
+[WEB_SQL][PrenameService][2022-08-06 08:39:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF43D0>
+[WEB_SQL][PrenameService][2022-08-06 08:39:57][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83E80>
+[WEB_SQL][PrenameService][2022-08-06 08:39:57][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83E80>
+[WEB_SQL][PrenameService][2022-08-06 08:40:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83400>
+[WEB_SQL][PrenameService][2022-08-06 08:40:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83400>
+[WEB_SQL][PrenameService][2022-08-06 08:40:08][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED80D00>
+[WEB_SQL][PrenameService][2022-08-06 08:40:08][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED80D00>
+[WEB_SQL][PrenameService][2022-08-06 08:40:10][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED820E0>
+[WEB_SQL][PrenameService][2022-08-06 08:40:10][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED820E0>
+[WEB_SQL][PrenameService][2022-08-06 08:41:03][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED81BD0>
+[WEB_SQL][PrenameService][2022-08-06 08:41:03][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED81BD0>
+[WEB_SQL][PrenameService][2022-08-06 08:41:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4B80>
+[WEB_SQL][PrenameService][2022-08-06 08:41:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4B80>
+[WEB_SQL][PrenameService][2022-08-06 08:41:13][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5690>
+[WEB_SQL][PrenameService][2022-08-06 08:41:13][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5690>
+[WEB_SQL][PrenameService][2022-08-06 08:41:17][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5B40>
+[WEB_SQL][PrenameService][2022-08-06 08:41:17][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5B40>
+[WEB_SQL][PrenameService][2022-08-06 08:41:21][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4220>
+[WEB_SQL][PrenameService][2022-08-06 08:41:21][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4220>
+[WEB_SQL][PrenameService][2022-08-06 08:41:23][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED81480>
+[WEB_SQL][PrenameService][2022-08-06 08:41:23][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED81480>
+[WEB_SQL][PrenameService][2022-08-06 08:41:30][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82470>
+[WEB_SQL][PrenameService][2022-08-06 08:41:30][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82470>
+[WEB_SQL][PrenameService][2022-08-06 08:41:32][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82290>
+[WEB_SQL][PrenameService][2022-08-06 08:41:32][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82290>
+[WEB_SQL][PrenameService][2022-08-06 08:41:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82950>
+[WEB_SQL][PrenameService][2022-08-06 08:41:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82950>
+[WEB_SQL][PrenameService][2022-08-06 08:41:38][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED838B0>
+[WEB_SQL][PrenameService][2022-08-06 08:41:38][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED838B0>
+[WEB_SQL][PrenameService][2022-08-06 08:41:51][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4850>
+[WEB_SQL][PrenameService][2022-08-06 08:41:51][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4850>
+[WEB_SQL][PrenameService][2022-08-06 08:41:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF6470>
+[WEB_SQL][PrenameService][2022-08-06 08:41:52][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF6470>
+[WEB_SQL][PrenameService][2022-08-06 08:41:54][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5780>
+[WEB_SQL][PrenameService][2022-08-06 08:41:54][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5780>
+[WEB_SQL][PrenameService][2022-08-06 08:42:23][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4EB0>
+[WEB_SQL][PrenameService][2022-08-06 08:42:23][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4EB0>
+[WEB_SQL][PrenameService][2022-08-06 08:42:27][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF6AA0>
+[WEB_SQL][PrenameService][2022-08-06 08:42:27][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF6AA0>
+[WEB_SQL][PrenameService][2022-08-06 08:42:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83C40>
+[WEB_SQL][PrenameService][2022-08-06 08:42:34][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83C40>
+[WEB_SQL][PrenameService][2022-08-06 08:42:37][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED837F0>
+[WEB_SQL][PrenameService][2022-08-06 08:42:37][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED837F0>
+[WEB_SQL][PrenameService][2022-08-06 08:42:43][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83730>
+[WEB_SQL][PrenameService][2022-08-06 08:42:43][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83730>
+[WEB_SQL][PrenameService][2022-08-06 08:42:53][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED81B40>
+[WEB_SQL][PrenameService][2022-08-06 08:42:53][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED81B40>
+[WEB_SQL][PrenameService][2022-08-06 08:42:55][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED81D50>
+[WEB_SQL][PrenameService][2022-08-06 08:42:55][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED81D50>
+[WEB_SQL][PrenameService][2022-08-06 08:43:01][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF62C0>
+[WEB_SQL][PrenameService][2022-08-06 08:43:01][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF62C0>
+[WEB_SQL][PrenameService][2022-08-06 08:43:03][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5870>
+[WEB_SQL][PrenameService][2022-08-06 08:43:03][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5870>
+[WEB_SQL][PrenameService][2022-08-06 08:43:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5E10>
+[WEB_SQL][PrenameService][2022-08-06 08:43:06][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5E10>
+[WEB_SQL][PrenameService][2022-08-06 08:43:09][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED80E80>
+[WEB_SQL][PrenameService][2022-08-06 08:43:09][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED80E80>
+[WEB_SQL][PrenameService][2022-08-06 08:43:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED816C0>
+[WEB_SQL][PrenameService][2022-08-06 08:43:11][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED816C0>
+[WEB_SQL][PrenameService][2022-08-06 08:43:13][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82560>
+[WEB_SQL][PrenameService][2022-08-06 08:43:13][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82560>
+[WEB_SQL][PrenameService][2022-08-06 08:43:16][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82F80>
+[WEB_SQL][PrenameService][2022-08-06 08:43:16][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82F80>
+[WEB_SQL][PrenameService][2022-08-06 08:45:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83640>
+[WEB_SQL][PrenameService][2022-08-06 08:45:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83640>
+[WEB_SQL][PrenameService][2022-08-06 08:46:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF67D0>
+[WEB_SQL][PrenameService][2022-08-06 08:46:02][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF67D0>
+[WEB_SQL][PrenameService][2022-08-06 08:46:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5B10>
+[WEB_SQL][PrenameService][2022-08-06 08:46:05][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF5B10>
+[WEB_SQL][PrenameService][2022-08-06 08:46:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF52A0>
+[WEB_SQL][PrenameService][2022-08-06 08:46:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF52A0>
+[WEB_SQL][PrenameService][2022-08-06 08:46:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF57E0>
+[WEB_SQL][PrenameService][2022-08-06 08:46:56][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF57E0>
+[WEB_SQL][PrenameService][2022-08-06 08:47:29][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83D90>
+[WEB_SQL][PrenameService][2022-08-06 08:47:29][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83D90>
+[WEB_SQL][PrenameService][2022-08-06 08:47:29][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83580>
+[WEB_SQL][PrenameService][2022-08-06 08:47:29][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83580>
+[WEB_SQL][PrenameService][2022-08-06 08:48:18][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83040>
+[WEB_SQL][PrenameService][2022-08-06 08:48:18][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED83040>
+[WEB_SQL][PrenameService][2022-08-06 08:48:22][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED81390>
+[WEB_SQL][PrenameService][2022-08-06 08:48:22][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED81390>
+[WEB_SQL][PrenameService][2022-08-06 08:48:29][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82080>
+[WEB_SQL][PrenameService][2022-08-06 08:48:29][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727ED82080>
+[WEB_SQL][PrenameService][2022-08-06 08:48:54][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF7400>
+[WEB_SQL][PrenameService][2022-08-06 08:48:54][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF7400>
+[WEB_SQL][PrenameService][2022-08-06 08:49:13][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4F70>
+[WEB_SQL][PrenameService][2022-08-06 08:49:13][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001727EDF4F70>

@@ -1,0 +1,85 @@
+[WEB_SQL][SubjectController][2022-08-07 06:07:23][ERROR]: SubjectController getSubjects Exception: {}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:07:23][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "argument of type 'NoneType' is not iterable")
+[WEB_SQL][SubjectRouter][2022-08-07 06:07:23][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "argument of type 'NoneType' is not iterable")
+[WEB_SQL][SubjectController][2022-08-07 06:07:27][ERROR]: SubjectController getSubjects Exception: {}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:07:27][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "argument of type 'NoneType' is not iterable")
+[WEB_SQL][SubjectRouter][2022-08-07 06:07:27][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "argument of type 'NoneType' is not iterable")
+[WEB_SQL][PrenameService][2022-08-07 06:07:29][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001D07165D870>
+[WEB_SQL][PrenameService][2022-08-07 06:07:29][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001D07165D870>
+[WEB_SQL][UserRepository][2022-08-07 06:07:33][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test_admin')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test_admin' AND u.user_password='test_password' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test_admin' AND u.user_password='test_password' LIMIT 1) 
+[WEB_SQL][PrenameService][2022-08-07 06:07:33][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001D07165F3D0>
+[WEB_SQL][PrenameService][2022-08-07 06:07:33][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001D07165F3D0>
+[WEB_SQL][SubjectController][2022-08-07 06:07:35][ERROR]: SubjectController getSubjects Exception: {}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:07:35][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "argument of type 'NoneType' is not iterable")
+[WEB_SQL][SubjectRouter][2022-08-07 06:07:35][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "argument of type 'NoneType' is not iterable")
+[WEB_SQL][PrenameService][2022-08-07 06:07:46][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001D07165FA90>
+[WEB_SQL][PrenameService][2022-08-07 06:07:46][INFO]: <V1.models.teacherModel.TeacherModel object at 0x000001D07165FA90>
+[WEB_SQL][SubjectController][2022-08-07 06:07:49][ERROR]: SubjectController getSubjects Exception: {}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:07:49][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "argument of type 'NoneType' is not iterable")
+[WEB_SQL][SubjectRouter][2022-08-07 06:07:49][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "argument of type 'NoneType' is not iterable")
+[WEB_SQL][SubjectController][2022-08-07 06:08:02][ERROR]: SubjectController getSubjects Exception: {}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:08:02][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "argument of type 'NoneType' is not iterable")
+[WEB_SQL][SubjectRouter][2022-08-07 06:08:02][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "argument of type 'NoneType' is not iterable")
+[WEB_SQL][SubjectController][2022-08-07 06:09:25][ERROR]: SubjectController getSubjects Exception: {}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:09:25][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "local variable 'subjectId' referenced before assignment")
+[WEB_SQL][SubjectRouter][2022-08-07 06:09:25][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "local variable 'subjectId' referenced before assignment")
+[WEB_SQL][SubjectRepository][2022-08-07 06:10:23][ERROR]: SubjectRepository findSubject() Exception : {}
+[WEB_SQL][SubjectService][2022-08-07 06:10:23][ERROR]: SubjectService getSubject() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectController][2022-08-07 06:10:24][ERROR]: SubjectController getSubjects Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:10:24][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRouter][2022-08-07 06:10:24][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRepository][2022-08-07 06:12:25][ERROR]: SubjectRepository findSubject() Exception : {}
+[WEB_SQL][SubjectService][2022-08-07 06:12:25][ERROR]: SubjectService getSubject() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectController][2022-08-07 06:12:25][ERROR]: SubjectController getSubjects Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:12:25][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRouter][2022-08-07 06:12:25][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][PrenameService][2022-08-07 06:12:40][INFO]: <V1.models.teacherModel.TeacherModel object at 0x00000197442CE290>
+[WEB_SQL][PrenameService][2022-08-07 06:12:40][INFO]: <V1.models.teacherModel.TeacherModel object at 0x00000197442CE290>
+[WEB_SQL][SubjectRepository][2022-08-07 06:12:42][ERROR]: SubjectRepository findSubject() Exception : {}
+[WEB_SQL][SubjectService][2022-08-07 06:12:42][ERROR]: SubjectService getSubject() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectController][2022-08-07 06:12:42][ERROR]: SubjectController getSubjects Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:12:42][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRouter][2022-08-07 06:12:42][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRepository][2022-08-07 06:14:38][ERROR]: SubjectRepository findSubject() Exception : {}
+[WEB_SQL][SubjectService][2022-08-07 06:14:38][ERROR]: SubjectService getSubject() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectController][2022-08-07 06:14:38][ERROR]: SubjectController getSubjects Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:14:38][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRouter][2022-08-07 06:14:38][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRepository][2022-08-07 06:15:35][ERROR]: SubjectRepository findSubject() Exception : {}
+[WEB_SQL][SubjectService][2022-08-07 06:15:35][ERROR]: SubjectService getSubject() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectController][2022-08-07 06:15:35][ERROR]: SubjectController getSubjects Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:15:35][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRouter][2022-08-07 06:15:35][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRepository][2022-08-07 06:16:26][INFO]: try
+[WEB_SQL][SubjectRepository][2022-08-07 06:16:26][ERROR]: SubjectRepository findSubject() Exception : {}
+[WEB_SQL][SubjectService][2022-08-07 06:16:26][ERROR]: SubjectService getSubject() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectController][2022-08-07 06:16:26][ERROR]: SubjectController getSubjects Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:16:26][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRouter][2022-08-07 06:16:26][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRepository][2022-08-07 06:17:53][INFO]: try 1
+[WEB_SQL][SubjectRepository][2022-08-07 06:17:53][ERROR]: SubjectRepository findSubject() Exception : {}
+[WEB_SQL][SubjectService][2022-08-07 06:17:53][ERROR]: SubjectService getSubject() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectController][2022-08-07 06:17:53][ERROR]: SubjectController getSubjects Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:17:53][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRouter][2022-08-07 06:17:53][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRepository][2022-08-07 06:20:08][INFO]: try 1
+[WEB_SQL][SubjectRepository][2022-08-07 06:20:08][ERROR]: SubjectRepository findSubject() Exception : {}
+[WEB_SQL][SubjectService][2022-08-07 06:20:08][ERROR]: SubjectService getSubject() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectController][2022-08-07 06:20:08][ERROR]: SubjectController getSubjects Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:20:08][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRouter][2022-08-07 06:20:08][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRepository][2022-08-07 06:21:37][INFO]: try 1
+[WEB_SQL][SubjectRepository][2022-08-07 06:21:37][ERROR]: SubjectRepository findSubject() Exception : {}
+[WEB_SQL][SubjectService][2022-08-07 06:21:37][ERROR]: SubjectService getSubject() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectController][2022-08-07 06:21:37][ERROR]: SubjectController getSubjects Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'courses'"}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:21:37][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRouter][2022-08-07 06:21:37][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "'courses'")
+[WEB_SQL][SubjectRepository][2022-08-07 06:25:25][INFO]: try 1
+[WEB_SQL][SubjectRepository][2022-08-07 06:25:25][ERROR]: SubjectRepository findSubject() Exception : {"msg": "Unknown column 'u.enable' in 'where clause'", "_full_msg": "1054 (42S22): Unknown column 'u.enable' in 'where clause'", "errno": 1054, "sqlstate": "42S22"}
+[WEB_SQL][SubjectService][2022-08-07 06:25:25][ERROR]: SubjectService getSubject() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "1054 (42S22): Unknown column 'u.enable' in 'where clause'"}
+[WEB_SQL][SubjectController][2022-08-07 06:25:25][ERROR]: SubjectController getSubjects Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "1054 (42S22): Unknown column 'u.enable' in 'where clause'"}
+[WEB_SQL][SubjectEventRouter][2022-08-07 06:25:25][ERROR]: SubjectEventRouter getSubjects() Exception : (500, 'INTERNAL SERVER ERROR', "1054 (42S22): Unknown column 'u.enable' in 'where clause'")
+[WEB_SQL][SubjectRouter][2022-08-07 06:25:25][ERROR]: SubjectRouter subject() Exception : (500, 'INTERNAL SERVER ERROR', "1054 (42S22): Unknown column 'u.enable' in 'where clause'")
+[WEB_SQL][SubjectRepository][2022-08-07 06:25:54][INFO]: try 1
+[WEB_SQL][SubjectRepository][2022-08-07 06:26:07][INFO]: try 1
+[WEB_SQL][SubjectRepository][2022-08-07 06:26:13][INFO]: try 1

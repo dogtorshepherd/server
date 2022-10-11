@@ -1,0 +1,92 @@
+[WEB_SQL][UserRepository][2022-08-06 03:15:28][INFO]: QUERY : SELECT * FROM users u WHERE 1=1 AND u.enable='Y'
+[WEB_SQL][UserRepository][2022-08-06 03:15:28][ERROR]: UserRepository userLogin Exception: {}
+[WEB_SQL][UserService][2022-08-06 03:15:28][ERROR]: UserService userLogin() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'USER_EXIST'"}
+[WEB_SQL][UserController][2022-08-06 03:15:28][ERROR]: UserController userLogin Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'USER_EXIST'"}
+[WEB_SQL][UserEventRouter][2022-08-06 03:15:28][ERROR]: UserEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', "'USER_EXIST'")
+[WEB_SQL][UserRouter][2022-08-06 03:15:28][ERROR]: UserRouter login() Exception : (500, 'INTERNAL SERVER ERROR', "'USER_EXIST'")
+[WEB_SQL][UserRepository][2022-08-06 03:15:52][INFO]: QUERY : SELECT * FROM users u WHERE 1=1 AND u.enable='Y'
+[WEB_SQL][UserRepository][2022-08-06 03:15:52][ERROR]: UserRepository userLogin Exception: {}
+[WEB_SQL][UserService][2022-08-06 03:15:52][ERROR]: UserService userLogin() Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'USER_EXIST'"}
+[WEB_SQL][UserController][2022-08-06 03:15:52][ERROR]: UserController userLogin Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": "'USER_EXIST'"}
+[WEB_SQL][UserEventRouter][2022-08-06 03:15:52][ERROR]: UserEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', "'USER_EXIST'")
+[WEB_SQL][UserRouter][2022-08-06 03:15:52][ERROR]: UserRouter login() Exception : (500, 'INTERNAL SERVER ERROR', "'USER_EXIST'")
+[WEB_SQL][UserRepository][2022-08-06 03:22:07][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test' AND u.user_password='test' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test' AND u.user_password='test' LIMIT 1) 
+[WEB_SQL][UserService][2022-08-06 03:22:07][ERROR]: UserService userLogin() Exception: {}
+[WEB_SQL][UserController][2022-08-06 03:22:07][ERROR]: UserController userLogin Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][UserEventRouter][2022-08-06 03:22:07][ERROR]: UserEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][UserRouter][2022-08-06 03:22:07][ERROR]: UserRouter login() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][UserRepository][2022-08-06 03:28:46][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test' AND u.user_password='test' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test' AND u.user_password='test' LIMIT 1) 
+[WEB_SQL][UserService][2022-08-06 03:28:46][ERROR]: PZA UserService userLogin() Exception: {}
+[WEB_SQL][UserController][2022-08-06 03:28:46][ERROR]: UserController userLogin Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][UserEventRouter][2022-08-06 03:28:46][ERROR]: UserEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][UserRouter][2022-08-06 03:28:46][ERROR]: UserRouter login() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][TestRouter][2022-08-06 03:31:34][ERROR]: TestRouter test() Exception : None
+[WEB_SQL][TestRouter][2022-08-06 03:32:27][ERROR]: TestRouter test() Exception : None
+[WEB_SQL][TestRouter][2022-08-06 03:32:29][ERROR]: TestRouter test() Exception : None
+[WEB_SQL][TestRouter][2022-08-06 03:32:30][ERROR]: TestRouter test() Exception : None
+[WEB_SQL][TestRouter][2022-08-06 03:32:40][ERROR]: TestRouter test() Exception : None
+[WEB_SQL][UserRepository][2022-08-06 03:36:44][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test' AND u.user_password='test' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test' AND u.user_password='test' LIMIT 1) 
+[WEB_SQL][UserService][2022-08-06 03:36:44][ERROR]: UserService userLogin() Exception: {}
+[WEB_SQL][UserController][2022-08-06 03:36:44][ERROR]: UserController userLogin Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][UserEventRouter][2022-08-06 03:36:44][ERROR]: UserEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][UserRouter][2022-08-06 03:36:44][ERROR]: UserRouter login() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][UserRepository][2022-08-06 03:36:57][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test' AND u.user_password='test' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test' AND u.user_password='test' LIMIT 1) 
+[WEB_SQL][UserService][2022-08-06 03:36:57][ERROR]: UserService userLogin() Exception: {}
+[WEB_SQL][UserController][2022-08-06 03:36:57][ERROR]: UserController userLogin Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][UserEventRouter][2022-08-06 03:36:57][ERROR]: UserEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][UserRouter][2022-08-06 03:36:57][ERROR]: UserRouter login() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameService][2022-08-06 03:37:02][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameService][2022-08-06 03:37:02][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameController][2022-08-06 03:37:02][ERROR]: PrenameController getPrenames Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:37:02][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameRouter][2022-08-06 03:37:02][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][StudentRepository][2022-08-06 03:37:39][INFO]: QUERY : SELECT * FROM students s INNER JOIN users u ON u.user_id = s.user_id WHERE u.enable='Y'  AND u.user_id=%s AND s.student_id=%s AND (s.student_id LIKE %s OR u.user_firstname LIKE %s OR u.user_lastname LIKE %s) 
+[WEB_SQL][UserRepository][2022-08-06 03:38:34][INFO]: QUERY : (SELECT u.user_id,u.user_username, u.user_firstname, u.user_lastname,u.user_prename,pt.prename_text, u.user_email, u.user_type,  IF((SELECT COUNT(*) FROM users u WHERE u.user_username='test')>0,1,0) AS USER_EXIST , IF((SELECT COUNT(*) FROM users u WHERE u.user_username = 'test' AND u.user_password='test' )>0, 1,0) AS USER_LOGIN FROM users u INNER JOIN prename_list pt ON pt.prename_id = u.user_prename WHERE u.enable='Y' AND pt.enable='Y' AND u.user_username='test' AND u.user_password='test' LIMIT 1) 
+[WEB_SQL][UserService][2022-08-06 03:38:34][ERROR]: UserService userLogin() Exception: {}
+[WEB_SQL][UserController][2022-08-06 03:38:34][ERROR]: UserController userLogin Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][UserEventRouter][2022-08-06 03:38:34][ERROR]: UserEventRouter getAdmin() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][UserRouter][2022-08-06 03:38:34][ERROR]: UserRouter login() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameService][2022-08-06 03:43:17][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameService][2022-08-06 03:43:17][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameController][2022-08-06 03:43:17][ERROR]: PrenameController getPrenames Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:43:17][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameRouter][2022-08-06 03:43:17][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameService][2022-08-06 03:43:19][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameService][2022-08-06 03:43:19][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameController][2022-08-06 03:43:19][ERROR]: PrenameController getPrenames Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:43:19][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameRouter][2022-08-06 03:43:19][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameService][2022-08-06 03:43:20][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameService][2022-08-06 03:43:20][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameController][2022-08-06 03:43:20][ERROR]: PrenameController getPrenames Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:43:20][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameRouter][2022-08-06 03:43:20][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameService][2022-08-06 03:43:25][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameService][2022-08-06 03:43:25][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameController][2022-08-06 03:43:25][ERROR]: PrenameController getPrenames Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:43:25][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameRouter][2022-08-06 03:43:25][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameService][2022-08-06 03:44:49][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameService][2022-08-06 03:44:49][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameController][2022-08-06 03:44:49][ERROR]: PrenameController getPrenames Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:44:49][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameRouter][2022-08-06 03:44:49][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameController][2022-08-06 03:46:46][ERROR]: PrenameController getPrenames Exception: {}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:46:46][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', 'can only concatenate str (not "method-wrapper") to str')
+[WEB_SQL][PrenameRouter][2022-08-06 03:46:46][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', 'can only concatenate str (not "method-wrapper") to str')
+[WEB_SQL][PrenameController][2022-08-06 03:50:18][ERROR]: PrenameController getPrenames Exception: {}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:50:18][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', 'can only concatenate str (not "method-wrapper") to str')
+[WEB_SQL][PrenameRouter][2022-08-06 03:50:18][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', 'can only concatenate str (not "method-wrapper") to str')
+[WEB_SQL][PrenameController][2022-08-06 03:50:19][ERROR]: PrenameController getPrenames Exception: {}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:50:19][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', 'can only concatenate str (not "method-wrapper") to str')
+[WEB_SQL][PrenameRouter][2022-08-06 03:50:19][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', 'can only concatenate str (not "method-wrapper") to str')
+[WEB_SQL][PrenameService][2022-08-06 03:54:53][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameService][2022-08-06 03:54:53][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameController][2022-08-06 03:54:53][ERROR]: PrenameController getPrenames Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:54:53][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameRouter][2022-08-06 03:54:53][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameService][2022-08-06 03:58:12][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameService][2022-08-06 03:58:12][ERROR]: PrenameService getPrenames() Exception: {}
+[WEB_SQL][PrenameController][2022-08-06 03:58:12][ERROR]: PrenameController getPrenames Exception: {"statusCode": 500, "message": "INTERNAL SERVER ERROR", "httpCode": [500], "stack": null}
+[WEB_SQL][PrenameEventRouter][2022-08-06 03:58:12][ERROR]: PrenameEventRouter getPrenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
+[WEB_SQL][PrenameRouter][2022-08-06 03:58:12][ERROR]: PrenameRouter prenames() Exception : (500, 'INTERNAL SERVER ERROR', None)
